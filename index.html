@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/themes/material_blue.css">
+</head>
+<body>
+    <div class="container">
+        <div id="toggleStyle">
+            <i id="sunIcon" class="fa-solid fa-sun"></i>
+            <i id="moonIcon" class="fa-solid fa-moon"></i>
+        </div>
+        <div class="form-content">
+            <h1 id="title">Formulario</h1>
+            <form id="registrationForm">
+                <div class="input-group">
+                    <div class="input-field">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" placeholder="" id="name" required>
+                    </div>
+                    <div class="input-field">
+                        <label for="apellido">Apellido:</label>
+                        <input type="text" placeholder="" id="lastName" required>
+                    </div>
+                    <div class="input-field">
+                        <label for="email">Email:</label>
+                        <input type="email" placeholder="" id="email" required>
+                    </div>
+                    <div class="input-field">
+                        <label for="fecha-nacimiento">Fecha de Nacimiento:</label>
+                        <input type="text" placeholder="" id="birthDate" required>
+                    </div>
+                    
+                    <div class="input-field">
+                        <label for="pais">País de Residencia:</label>
+                        <select id="country" required>
+                            <option value="">Seleccione su país</option>
+                        </select>
+                    </div>
+                    <div class="input-field">
+                        <label for="pais">Contraseña:</label>
+                        <input type="password" placeholder="" id="password" required>
+                    </div>  
+                </div>     
+                        <div class="btn-field">
+                           <button id="signUp" type="submit" class="btn-enviar">Enviar</button>
+                        </div>
+                      
+            </form>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/es.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
